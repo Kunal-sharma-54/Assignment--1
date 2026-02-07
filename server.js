@@ -3,6 +3,8 @@ require("dotenv").config()
 const app = express();
 const products = require("./routes/productRoutes")
 
+const cartroute = require("./routes/cartroutes");
+
 
 
 //middelware
@@ -15,8 +17,7 @@ app.get('/',(req,res)=>{
 
 app.use('/api',products);
 
-
-
+app.use('/api',cartroute);
 
 
 const port = process.env.PORT;

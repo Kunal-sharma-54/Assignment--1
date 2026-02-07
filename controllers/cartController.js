@@ -24,3 +24,4 @@ const addToCart = (req,res)=>{
 
 
 module.exports = { addToCart };
+//for destructuring the cart
